@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRAKTIKUM 6.2</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: #f3f3f3;
+
+        }
+
+        .flex-container>div {
+            color: black;
+            width: 100px;
+            margin: 0;
+            text-align: start;
+            font-size: 25px;
+        }
+
+        .flex-container>div>span {
+            margin: 30px;
+        }
+
+        .flex-container>div>div>span {
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body style="padding: 40px; box-sizing: border-box;">
+
+    <div class="flex-container">
+        <div style="flex-grow: 2; background-color: rgb(168, 157, 219); padding-top: 10px;"><span>Nav</span>
+        </div>
+        <div style="flex-grow: 8; background-color: rgb(230, 134, 51);">
+            <div style="background-color: rgb(230, 134, 51); line-height: 75px;"><span>Header</span></div>
+            <div class="flex-container" style="background-color: rgb(156, 72, 86); line-height: 475px;">
+                <div style="flex-grow: 8; background-color: rgb(21, 186, 207);"><span>Article</span></div>
+                <div style="flex-grow: 2; background-color: rgb(167, 89, 80);"><span>Aside</span></div>
+            </div>
+            <div style="background-color: rgb(230, 134, 51); line-height: 75px;"><span>Footer</span></div>
+        </div>
+    </div>
+
+</body>
+
+</html> 
